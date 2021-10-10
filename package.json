@@ -1,6 +1,6 @@
 {
   "name": "olum-writer",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "OlumWriter is a lightweight and flexible library for adding an amazing writing effect to your web apps, written in vanilla js",
   "main": "dist/olum-writer.js",
   "directories": {

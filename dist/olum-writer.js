@@ -1,6 +1,6 @@
 /**
  * @name olum-writer
- * @version 0.0.5
+ * @version 0.0.6
  * @copyright 2021
  * @author Eissa Saber
  * @license MIT
@@ -97,41 +97,7 @@
       var className = options.container.className;
       var id = options.container.id;
       var selector = id ? "#" + id : "." + className;
-      style.innerHTML =
-        `${selector} {
-          position: relative;
-          font-weight: bold;
-          /* must be the same */
-          line-height: 25px;
-          display: inline !important;
-        }
-        ${selector}::after {
-          position: absolute;
-          content: "";
-          width: 10px;
-          /* must be the same */
-          height: 25px;
-          margin-left: 5px;
-          background: black;
-          -webkit-animation: blink 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
-          animation: blink 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
-        }
-        @-webkit-keyframes blink {
-          from {
-            visibility: hidden;
-          }
-          to {
-            visibility: visible;
-          }
-        }
-        @keyframes blink {
-          from {
-            visibility: hidden;
-          }
-          to {
-            visibility: visible;
-          }
-        }`;
+      style.innerHTML = "".concat(selector, " {\n          position: relative;\n          font-weight: bold;\n          /* must be the same */\n          line-height: 25px;\n          display: inline !important;\n        }\n        ").concat(selector, "::after {\n          position: absolute;\n          content: \"\";\n          width: 10px;\n          /* must be the same */\n          height: 25px;\n          margin-left: 5px;\n          background: black;\n          -webkit-animation: blink 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;\n          animation: blink 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;\n        }\n        @-webkit-keyframes blink {\n          from {\n            visibility: hidden;\n          }\n          to {\n            visibility: visible;\n          }\n        }\n        @keyframes blink {\n          from {\n            visibility: hidden;\n          }\n          to {\n            visibility: visible;\n          }\n        }");
       document.body.append(style);
     }
 
