@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Olum Writer</title>
+</head>
+
+<body>
+  <div id="foo"></div>
+
+  <script src="olum-writer.js"></script>
+  <script>
+    new OlumWriter({
+      container: document.getElementById("foo"),
+      sentences: [
+        "In 1511 AD Ezio will go to Ottoman Constantinople , consisting of four districts: Constantin, Beyazid, Imperial, and Galata; Cappadocia at the peak of the Ottoman Empire, part of which will be a completely underground city populated solely by Templars; and Masyaf, which holds the old Assassins' stronghold (featured in the first Assassin's Creed game) to which Ezio travels at the beginning of the game.",
+        "He discovers Altaïr has sealed within the fortress an ancient artifact that is said to be a powerful weapon which could end the Templar and Assassin war forever, and has hidden the keys in Constantinople. Ezio uses relics of the first civilization that hold memories of Altaïr to relive Altaïr's experiences, during which players will control Altaïr.",
+        "The game will also continue Desmond's story in the modern day, following the events of Brotherhood, where he will be trapped in the Animus, in comatose state, in which he has found a safe mode known as the Black Room. In the Black Room, Desmond must find a key memory that links him with Altaïr and Ezio to reintegrate his splintered subconscious and regain consciousness.",
+        "While in game Ezio will meet a variety of historical characters, including Manuel Palaiologos, an heir to the now lost Byzantine Empire, Byzantine Templars who will be lurking in the shadows of Constantinople, Prince Suleiman (Suleiman the Magnificent), a man who will one day become one of the Ottoman Empire's greatest Sultans and his uncle, Prince Ahmet.",
+      ],
+      interval: 3000,
+      speed: 10000,
+      reverse: false
+    });
+  </script>
+</body>
+
+</html>
